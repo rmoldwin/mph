@@ -29,7 +29,7 @@ public class Mp2001HematopoieticGroup extends MphGroup {
         super(MphConstants.MP_2001_HEMATO_GROUP_ID, MphConstants.MP_2001_HEMATO_GROUP_NAME, "C000-C809", null, "9590-9989", null, "2-3,6", "2001-2009");
         initializeLookups();
 
-        MphRule rule = new MphRule(MphConstants.MP_2001_HEMATO_GROUP_ID, "") {
+        MphRule rule = new MphRule(MphConstants.MP_2001_HEMATO_GROUP_ID, null) {
             @Override
             public TempRuleResult apply(MphInput i1, MphInput i2, MphComputeOptions options) {
                 TempRuleResult result = new TempRuleResult();
